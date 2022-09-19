@@ -144,6 +144,16 @@ section {
     color: var(--black);
 }
 
+/* about us section  */
+#about-us img {
+    border-radius: 50%;
+    width: 200px;
+}
+
+#about-us p {
+    margin-bottom: var(--rem-1half);
+}
+
 /* MEDIA QUERY  */
 /* tablet  */
 @media screen and (min-width: 768px) {
@@ -181,6 +191,12 @@ section {
        width: calc(100% / 2 - var(--rem-1half));
     }
 
+    /* about us section  */
+    #about-us .row {
+        display: flex;
+        column-gap: var(--rem-1half);
+    }
+
 
 }
 
@@ -190,6 +206,7 @@ section {
     .container {
         width: 60%;
     }
+
     /**** HEADER ****/
     .hamburger-menu {
         display: none;
