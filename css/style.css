@@ -3,3 +3,84 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 100%;
+}
+/**** COMMON ****/
+/* root  */
+:root {
+    /* color  */
+    --primary-color: #0084fd;
+    --primary-color-light: #b5ddff;
+    --violet-color: #9792e4;
+    --yellow-color: #fdc15f;
+    --black-light-color: #333333;
+
+    /* margin  */
+    --mg-bottom: 1.5rem;
+}
+
+/* layout */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/**** HEADER ****/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+header .container {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/**** MAIN  ****/
+main {
+    margin-top: 140px;
+}
+
+#about .card {
+    padding: 2em 2em 0;
+    border-radius: 20px;
+    margin-bottom: var(--mg-bottom);
+    background-color: var(--primary-color-light);
+
+}
+
+
+/* MEDIA QUERY  */
+/* tablet  */
+@media screen and (min-width: 768px) {
+    .card-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--mg-bottom);
+    }
+    
+    #about .card {
+        width: calc(100% / 3 - var(--mg-bottom));
+        margin: 0;
+    }
+
+    #about .card:first-child {
+        width: calc(100% / 1.5 - var(--mg-bottom) );
+    }
+
+}
+
+/* desktop */
+@media screen and (min-width: 992px) {
+    
+}
