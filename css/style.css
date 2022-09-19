@@ -154,6 +154,21 @@ section {
     margin-bottom: var(--rem-1half);
 }
 
+/* get started section  */
+#get-started {
+    background-color: var(--violet-color);
+    color: var(--white);
+    text-align: center;
+}
+
+/**** FOOTER  ****/
+footer {
+    background-color: var(--black-light-color);
+    padding: var(--rem-3);
+    color: var(--white);
+    text-align: center;
+}
+
 /* MEDIA QUERY  */
 /* tablet  */
 @media screen and (min-width: 768px) {
@@ -197,6 +212,16 @@ section {
         column-gap: var(--rem-1half);
     }
 
+    /* get started section  */
+    #get-started .container {
+        width: 60%;
+    }
+
+    /**** FOOTER  ****/
+    footer .container{
+        width: 50%;
+    }
+
 
 }
 
@@ -205,6 +230,7 @@ section {
     /**** COMMON ****/
     .container {
         width: 60%;
+        max-width: 1100px;
     }
 
     /**** HEADER ****/
@@ -247,7 +273,7 @@ section {
     }
 
     #planning .container {
-        width: 55%;
+        width: 50%;
     }
 
     /* benefits section  */
@@ -259,5 +285,15 @@ section {
 
     #benefits .card {
         width: calc(100% / 3 - var(--rem-1half));
+    }
+
+     /* get started section  */
+     #get-started .container {
+        width: 50%;
+    }
+
+     /**** FOOTER  ****/
+     footer .container{
+        width: 40%;
     }
 }   
