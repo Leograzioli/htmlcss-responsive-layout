@@ -23,6 +23,8 @@ p {
     --violet-color: #9792e4;
     --yellow-color: #fdc15f;
     --black-light-color: #333333;
+    --white: #ffffff;
+    --black : #000000;
     
     /* measure*/
     --rem-1half: 2rem;
@@ -47,6 +49,7 @@ img {
 .card {
     border-radius: 20px;
     padding: var(--rem-1half);
+    margin-bottom: var(--rem-1half);
 }
 
 /**** HEADER ****/
@@ -57,7 +60,7 @@ header {
     right: 0;
     height: 80px;
     background-color: var(--primary-color);
-    color: white;
+    color: var(--white);
 }
 
 header .container {
@@ -81,9 +84,7 @@ section {
 }
  /* about section  */
 #about .card {
-    margin-bottom: var(--rem-1half);
     background-color: var(--primary-color-light);
-
 }
 
 .about-txt,
@@ -97,14 +98,14 @@ section {
  /* planning sction  */
 #planning {
     background-color: var(--violet-color);
-    color: white;
+    color: var(--white);
 }
 
 
 #planning .card-big {
     text-align: center;
-    background-color: white;
-    color: black;
+    background-color: var(--white);
+    color: var(--black);
 }
 
 #planning .card-big i {
@@ -122,13 +123,25 @@ section {
 
 #testimonials .card-big {
     background-color: var(--violet-color);
-    color: white;
+    color: var(--white);
     margin-bottom: var(--rem-1half);
 }
 
 .testimonials-img img {
     border-radius: 50%;
     width: 200px;
+}
+
+/* benefits section  */
+
+#benefits {
+    background-color: var(--violet-color);
+    color: var(--white);
+}
+
+#benefits .card {
+    background-color: var(--white);
+    color: var(--black);
 }
 
 /* MEDIA QUERY  */
@@ -157,6 +170,18 @@ section {
         display: flex;
     }
 
+    /* benefits section  */
+    #benefits .row {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: var(--rem-1half);
+    }
+
+    #benefits .card {
+       width: calc(100% / 2 - var(--rem-1half));
+    }
+
+
 }
 
 /* desktop */
@@ -183,7 +208,6 @@ section {
         margin-left: 2em;
     }
 
-
     /**** MAIN  ****/
     /* about section  */
     #about .card:first-child {
@@ -208,4 +232,15 @@ section {
     #planning .container {
         width: 55%;
     }
-}
+
+    /* benefits section  */
+    #benefits .row {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: var(--rem-1half);
+    }
+
+    #benefits .card {
+        width: calc(100% / 3 - var(--rem-1half));
+    }
+}   
