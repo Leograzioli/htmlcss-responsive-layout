@@ -217,12 +217,18 @@ footer {
         width: 60%;
     }
 
-    /**** FOOTER  ****/
-    footer .container{
-        width: 50%;
+    .txt-wrapper {
+        width: 90%;
+        margin: 0 auto;
     }
 
-
+    /**** FOOTER  ****/
+    footer .container {
+        width: 60%;
+    }
+    footer .txt-wrapper {
+        width: 60%;
+    }
 }
 
 /* desktop */
@@ -289,11 +295,19 @@ footer {
 
      /* get started section  */
      #get-started .container {
-        width: 50%;
+        width: 60%;
+    }
+
+    #get-started .txt-wrapper {
+        width: 80%;
     }
 
      /**** FOOTER  ****/
      footer .container{
-        width: 40%;
+        width: 60%;
+    }
+
+    footer .txt-wrapper {
+        width: 60%;
     }
 }   
