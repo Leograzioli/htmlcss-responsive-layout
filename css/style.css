@@ -15,6 +15,10 @@ p {
     line-height: 2rem;
 }
 
+.p-small {
+    font-size: 0.8rem;
+}
+
 h2 { 
     margin: 2rem 0;
 }
@@ -305,11 +309,44 @@ section {
     text-align: center;
 }
 
+#get-started .txt-wrapper-top p {
+    color: #d5d4f4;
+    letter-spacing: 0.1rem;
+}
+
+#get-started .txt-wrapper-top {
+    width: 80%;
+    margin: 0 auto
+}
+
+#get-started h3 {
+    font-size: var(--rem-4);
+    color: var(--yellow-color);
+}
+
+#get-started a {
+    text-decoration: underline;
+}
+
+#get-started .button {
+    padding: var(--rem-1) var(--rem-4);
+    margin-bottom: var(--rem-2);
+}
+
 /************* FOOTER  *************/
 footer {
-    padding: var(--rem-3);
+    padding: var(--rem-3) 0;
     color: var(--white);
     text-align: center;
+}
+
+footer p {
+    line-height: normal;
+}
+
+footer a {
+    color: var(--violet-color);
+    text-decoration: underline;
 }
 
 /************* MEDIA QUERY *************/
@@ -482,7 +519,7 @@ footer {
     }
 
     #get-started .txt-wrapper {
-        width: 80%;
+        width: 60%;
     }
 
      /************* FOOTER  *************/
