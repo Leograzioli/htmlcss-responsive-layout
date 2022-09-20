@@ -253,6 +253,8 @@ section {
     margin-bottom: var(--rem-2);
 }
 
+
+
 .testimonials-img img {
     border-radius: 50%;
     width: 150px;
@@ -357,7 +359,7 @@ section {
 }
 
 #get-started .button  {
-    margin-bottom: var(--rem-2);
+    margin: var(--rem-2) 0;
 }
 
 #get-started .button a {
