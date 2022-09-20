@@ -40,8 +40,11 @@ h3 {
     
     /* measure*/
     --rem-1: 1rem;
+    --rem-1half: 1.5rem;
     --rem-2: 2rem;
     --rem-3: 3rem; 
+    --rem-4: 4rem;
+    --rem-5: 5rem;
 }
 
 /* layout */
@@ -73,7 +76,7 @@ a {
 /* buttons */
 .button {
     display: inline-block;
-    padding: 0.5rem 3rem;
+    padding: 0.5rem 2.5rem;
     border-radius: 60px;
     letter-spacing: 0.1rem;
     margin-top: var(--rem-2);
@@ -272,8 +275,28 @@ section {
     width: 200px;
 }
 
+#about-us h2 {
+    color: var(--violet-color);
+    font-size: var(--rem-3);
+}
+
+#about-us h3 {
+    color: var(--violet-color);
+    font-size: var(--rem-1half);
+}
+
 #about-us p {
-    margin-bottom: var(--rem-2);
+    margin-bottom: var(--rem-3);
+}
+
+#about-us i {
+    margin-right: var(--rem-1);
+}
+
+#about-us .button {
+    letter-spacing: normal;
+    font-size: 0.9rem;
+    padding: 0.5rem var(--rem-1);
 }
 
 /* get started section  */
@@ -313,7 +336,7 @@ footer {
 
     /* planning section  */
     #planning h2 {
-        font-size: 4rem;
+        font-size: var(--rem-4);
     }
 
     /* testimonials section  */
@@ -353,6 +376,12 @@ footer {
     #about-us .row {
         display: flex;
         column-gap: var(--rem-2);
+        padding-top: var(--rem-2);
+    }
+
+    #about-us h2 {
+        margin-top: 0;
+        font-size: var(--rem-4);
     }
 
     /* get started section  */
