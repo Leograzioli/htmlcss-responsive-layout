@@ -80,8 +80,11 @@ a {
 /* buttons */
 .button {
     display: inline-block;
-    padding: 0.5rem 2.5rem;
     border-radius: 60px;
+    line-height: 40px;
+}
+.button a {
+    padding: 01rem 2.5rem;
     letter-spacing: 0.1rem;
     margin-top: var(--rem-2);
 }
@@ -128,6 +131,10 @@ a {
     color: var(--black-light-color);
  }
 
+ .color-black {
+    color: var(--black);
+ }
+
  /* margins  */
  .mg-bt1 {
     margin-bottom: var(--rem-1);
@@ -150,6 +157,12 @@ header {
     height: 80px;
     background-color: var(--primary-color);
     color: var(--white);
+}
+
+header .button {
+    margin: 0;
+    padding: 0.5rem var(--rem-1);
+    line-height: normal;
 }
 
 header .container {
@@ -183,7 +196,7 @@ section {
     text-align: left;
 }
 
-#about .button {
+#about .button  {
     color: var(--white)
 }
 
@@ -297,10 +310,11 @@ section {
     margin-right: var(--rem-1);
 }
 
-#about-us .button {
+#about-us .button a  {
     letter-spacing: normal;
     font-size: 0.9rem;
     padding: 0.5rem var(--rem-1);
+    line-height: normal;
 }
 
 /* get started section  */
@@ -328,9 +342,14 @@ section {
     text-decoration: underline;
 }
 
-#get-started .button {
-    padding: var(--rem-1) var(--rem-4);
+#get-started .button  {
     margin-bottom: var(--rem-2);
+}
+
+#get-started .button a {
+    line-height: 60px;
+    padding: 0 var(--rem-5);
+    text-decoration: none;
 }
 
 /************* FOOTER  *************/
