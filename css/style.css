@@ -15,6 +15,10 @@ p {
     line-height: 2rem;
 }
 
+h2 { 
+    margin: 2rem 0;
+}
+
 /* root  */
 :root {
     /* color  */
@@ -24,7 +28,8 @@ p {
     --yellow-color: #fdc15f;
     --black-light-color: #333333;
     --white: #ffffff;
-    --black : #000000;
+    --black: #000000;
+    --gray: #333333a6;
     
     /* measure*/
     --rem-1half: 2rem;
@@ -34,6 +39,11 @@ p {
 /* layout */
 img {
     width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
 .container {
@@ -51,6 +61,58 @@ img {
     padding: var(--rem-1half);
     margin-bottom: var(--rem-1half);
 }
+
+/* buttons */
+.button {
+    display: inline-block;
+    padding: 0.5rem 3rem;
+    border-radius: 60px;
+    letter-spacing: 0.1rem;
+    margin: 2rem 0;
+}
+
+/* background colors  */
+.bg-blue {
+    background-color: var(--primary-color);
+}
+
+.bg-light-blue {
+    background-color: var(--primary-color-light);
+}
+
+.bg-violet {
+    background-color: var(--violet-color);
+}
+
+.bg-white {
+    background-color: var(--white);
+}
+
+.bg-light-black {
+    background-color: var(--black-light-color)
+}
+
+/* colors  */
+ .color-blue {
+    color: var(--primary-color)
+ }
+
+ .color-light-blue {
+    color: var(--primary-color-light);
+ }
+
+ .color-violet {
+    color: var(--violet-color);
+ }
+
+ .color-white {
+    color: var(--white);
+ }
+
+ .color-light-black {
+    color: var(--black-light-color);
+ }
+
 
 /************* HEADER *************/
 header {
@@ -85,19 +147,33 @@ section {
  /* about section  */
 #about .card {
     background-color: var(--primary-color-light);
+    text-align: center;
 }
 
-.about-txt,
-.about-img {
-    padding: var(--rem-1half);
+#about .card:first-child {
+    padding-bottom: 0;
+    text-align: left;
+}
 
-    /* DEBUG */
-    border: 1px solid black;
+#about .button {
+    color: var(--white)
+}
+
+#about img {
+    display: block;
+}
+
+#about h2 {
+    color: var(--primary-color);
+}
+
+#about p {
+    color: var(--gray);
 }
 
  /* planning sction  */
 #planning {
-    background-color: var(--violet-color);
+
     color: var(--white);
 }
 
@@ -137,7 +213,6 @@ section {
 /* benefits section  */
 
 #benefits {
-    background-color: var(--violet-color);
     color: var(--white);
 }
 
@@ -158,14 +233,12 @@ section {
 
 /* get started section  */
 #get-started {
-    background-color: var(--violet-color);
     color: var(--white);
     text-align: center;
 }
 
 /************* FOOTER  *************/
 footer {
-    background-color: var(--black-light-color);
     padding: var(--rem-3);
     color: var(--white);
     text-align: center;
