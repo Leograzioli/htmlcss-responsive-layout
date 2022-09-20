@@ -23,6 +23,9 @@ h3 {
     margin: var(--rem-1) 0;
 }
 
+.txt-center {
+    text-align: center;
+}
 /* root  */
 :root {
     /* color  */
@@ -73,7 +76,7 @@ a {
     padding: 0.5rem 3rem;
     border-radius: 60px;
     letter-spacing: 0.1rem;
-    margin: 2rem 0;
+    margin-top: var(--rem-2);
 }
 
 /* background colors  */
@@ -247,6 +250,22 @@ section {
     color: var(--black);
 }
 
+#benefits h2 {
+    font-size: var(--rem-2);
+    margin-top: 0;
+}
+
+#benefits .card h2 {
+    color: var(--violet-color);
+}
+
+#benefits .card h3 {
+    color: var(--violet-color);
+}
+
+#benefits .card p {
+    color: var(--gray);
+}
 /* about us section  */
 #about-us img {
     border-radius: 50%;
@@ -324,6 +343,10 @@ footer {
 
     #benefits .card {
        width: calc(100% / 2 - var(--rem-2));
+    }
+
+    #benefits h2 {
+        font-size: var(--rem-3);
     }
 
     /* about us section  */
