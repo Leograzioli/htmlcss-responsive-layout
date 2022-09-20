@@ -49,6 +49,7 @@ h3 {
     --rem-3: 3rem; 
     --rem-4: 4rem;
     --rem-5: 5rem;
+    --rem-6: 6rem;
 }
 
 /* layout */
@@ -461,7 +462,7 @@ footer a {
         width: 60%;
     }
 
-    .txt-wrapper {
+    #get-started .txt-wrapper {
         width: 90%;
         margin: 0 auto;
     }
@@ -555,15 +556,24 @@ footer a {
     }
 
     #get-started .txt-wrapper {
-        width: 60%;
+        width: 40%;
+    }
+    
+    #get-started h2 {
+        font-size: var(--rem-3);
+    }
+
+    #get-started h3 {
+        font-size: var(--rem-6);
     }
 
      /************* FOOTER  *************/
      footer .container{
         width: 60%;
     }
-
+    
     footer .txt-wrapper {
-        width: 60%;
+        width: 40%;
+        margin: 0 auto;
     }
 }   
