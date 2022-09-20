@@ -161,6 +161,7 @@ section {
 
 #about img {
     display: block;
+    width: 250px;
 }
 
 #about h2 {
@@ -176,7 +177,6 @@ section {
 
     color: var(--white);
 }
-
 
 #planning .card-big {
     text-align: center;
@@ -263,6 +263,7 @@ footer {
 
     #about .card:first-child {
         width: calc(100% / 1.5 - var(--rem-1half) / 3);
+        padding-top: 0;
     }
 
     /* testimonials section  */
@@ -337,8 +338,10 @@ footer {
     /* about section  */
     #about .card:first-child {
         display: flex;
+        align-items: flex-end;
     }
-    
+
+      
     /* planning section  */
     #planning .row {
         display: flex;
