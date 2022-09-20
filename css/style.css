@@ -19,6 +19,10 @@ h2 {
     margin: 2rem 0;
 }
 
+h3 {
+    margin: var(--rem-1) 0;
+}
+
 /* root  */
 :root {
     /* color  */
@@ -32,7 +36,8 @@ h2 {
     --gray: #333333a6;
     
     /* measure*/
-    --rem-1half: 2rem;
+    --rem-1: 1rem;
+    --rem-2: 2rem;
     --rem-3: 3rem; 
 }
 
@@ -53,13 +58,13 @@ a {
 
 .card-big {
     border-radius: 60px;
-    padding: var(--rem-1half);
+    padding: var(--rem-2);
 }
 
 .card {
     border-radius: 20px;
-    padding: var(--rem-1half);
-    margin-bottom: var(--rem-1half);
+    padding: var(--rem-2);
+    margin-bottom: var(--rem-2);
 }
 
 /* buttons */
@@ -144,6 +149,7 @@ main {
 section {
     padding: var(--rem-3) 0;
 }
+
  /* about section  */
 #about .card {
     background-color: var(--primary-color-light);
@@ -174,7 +180,6 @@ section {
 
  /* planning sction  */
 #planning {
-
     color: var(--white);
 }
 
@@ -182,6 +187,15 @@ section {
     text-align: center;
     background-color: var(--white);
     color: var(--black);
+}
+
+#planning p {
+    font-size: 0.9rem;
+    margin-bottom: var(--rem-2);
+}
+
+#planning .col-right p {
+    font-style: italic;
 }
 
 #planning .card-big i {
@@ -192,6 +206,8 @@ section {
     background-color: var(--violet-color);
 }
 
+
+
 /* testimonials section  */
 #testimonials {
     text-align: center;
@@ -200,8 +216,9 @@ section {
 #testimonials .card-big {
     background-color: var(--violet-color);
     color: var(--white);
-    margin-bottom: var(--rem-1half);
+    margin-bottom: var(--rem-2);
 }
+
 
 .testimonials-img img {
     border-radius: 50%;
@@ -228,7 +245,7 @@ section {
 }
 
 #about-us p {
-    margin-bottom: var(--rem-1half);
+    margin-bottom: var(--rem-2);
 }
 
 /* get started section  */
@@ -253,17 +270,22 @@ footer {
     .card-wrapper {
         display: flex;
         flex-wrap: wrap;
-        gap: var(--rem-1half);
+        gap: var(--rem-2);
     }
     
     #about .card {
-        width: calc(100% / 3 - var(--rem-1half) * 2 / 3);
+        width: calc(100% / 3 - var(--rem-2) * 2 / 3);
         margin-bottom: 0;
     }
 
     #about .card:first-child {
-        width: calc(100% / 1.5 - var(--rem-1half) / 3);
+        width: calc(100% / 1.5 - var(--rem-2) / 3);
         padding-top: 0;
+    }
+
+    /* planning section  */
+    #planning h2 {
+        font-size: 4rem;
     }
 
     /* testimonials section  */
@@ -276,17 +298,17 @@ footer {
     #benefits .row {
         display: flex;
         flex-wrap: wrap;
-        column-gap: var(--rem-1half);
+        column-gap: var(--rem-2);
     }
 
     #benefits .card {
-       width: calc(100% / 2 - var(--rem-1half));
+       width: calc(100% / 2 - var(--rem-2));
     }
 
     /* about us section  */
     #about-us .row {
         display: flex;
-        column-gap: var(--rem-1half);
+        column-gap: var(--rem-2);
     }
 
     /* get started section  */
@@ -341,11 +363,15 @@ footer {
         align-items: flex-end;
     }
 
-      
+    
     /* planning section  */
+    #planning .container {
+        width: 50%;
+    }
+
     #planning .row {
         display: flex;
-        column-gap: var(--rem-3);
+        column-gap: var(--rem-2);
         align-items: flex-end;
     }
 
@@ -353,23 +379,28 @@ footer {
         margin: 120px 0;
     }
 
-    .col-left h2 {
+    #planning .col-left {
+        width: 55%;
+    }
+    #planning .col-right {
+        width: 45%;
+    }
+    
+    #planning h2 {
+        font-size: 2rem;
         margin-bottom: 100px;
     }
 
-    #planning .container {
-        width: 50%;
-    }
 
     /* benefits section  */
     #benefits .row {
         display: flex;
         flex-wrap: wrap;
-        column-gap: var(--rem-1half);
+        column-gap: var(--rem-2);
     }
 
     #benefits .card {
-        width: calc(100% / 3 - var(--rem-1half));
+        width: calc(100% / 3 - var(--rem-2));
     }
 
      /* get started section  */
