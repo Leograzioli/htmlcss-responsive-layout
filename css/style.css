@@ -129,7 +129,9 @@ section {
 
 .testimonials-img img {
     border-radius: 50%;
-    width: 200px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
 }
 
 /* benefits section  */
@@ -170,7 +172,7 @@ footer {
 }
 
 /* MEDIA QUERY  */
-/* tablet  */
+/************* tablet  *************/
 @media screen and (min-width: 768px) {
 
     /**** MAIN  ****/
@@ -231,7 +233,7 @@ footer {
     }
 }
 
-/* desktop */
+/************* desktop *************/
 @media screen and (min-width: 992px) {
     /**** COMMON ****/
     .container {
