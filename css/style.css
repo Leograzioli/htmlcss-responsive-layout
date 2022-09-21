@@ -509,8 +509,13 @@ footer a {
         display: flex;    
     }
 
+    #about .about-txt {
+        width: 55%;
+    }
+
     #about .about-img {
-    align-self: flex-end;
+        width: 45%;
+        align-self: flex-end;
     }   
     
     /* planning section  */
