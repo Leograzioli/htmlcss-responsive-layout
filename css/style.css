@@ -8,6 +8,7 @@
 html {
     font-family: 'Pt sans', sans-serif;
     font-size: 100%;
+    scroll-behavior: smooth;
 }
 
 /* text  */
@@ -159,6 +160,7 @@ header {
     z-index: 999;
     background-color: var(--primary-color);
     color: var(--white);
+    scroll-margin-top: 80px;
 }
 
 header .button {
@@ -185,6 +187,7 @@ main {
 
 section {
     padding: var(--rem-3) 0;
+    scroll-margin-top: 80px;
 }
 
  /* about section  */
@@ -254,8 +257,6 @@ section {
     margin-bottom: var(--rem-2);
 }
 
-
-
 .testimonials-img img {
     border-radius: 50%;
     width: 150px;
@@ -264,7 +265,6 @@ section {
 }
 
 /* benefits section  */
-
 #benefits {
     color: var(--white);
 }
@@ -290,6 +290,7 @@ section {
 #benefits .card p {
     color: var(--gray);
 }
+
 /* about us section  */
 #about-us img {
     border-radius: 50%;
@@ -332,7 +333,6 @@ section {
     font-size: 12rem;
     color: var(--violet-color)
 }
-
 
 /* get started section  */
 #get-started {
@@ -506,10 +506,12 @@ footer a {
     /************* MAIN *************/
     /* about section  */
     #about .card:first-child {
-        display: flex;
-        align-items: flex-end;
+        display: flex;    
     }
 
+    #about .about-img {
+    align-self: flex-end;
+    }   
     
     /* planning section  */
     #planning .container {
@@ -537,7 +539,6 @@ footer a {
         font-size: 2rem;
         margin-bottom: 100px;
     }
-
 
     /* benefits section  */
     #benefits .row {
