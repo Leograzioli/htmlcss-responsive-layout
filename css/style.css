@@ -163,9 +163,11 @@ header {
 
 header .button {
     margin: 0;
-    padding: 0.5rem var(--rem-1);
+    padding: 0.5rem 0;
     line-height: normal;
 }
+
+header .button a {}
 
 header .container {
     height: 80px;
