@@ -167,8 +167,6 @@ header .button {
     line-height: normal;
 }
 
-header .button a {}
-
 header .container {
     height: 80px;
     display: flex;
